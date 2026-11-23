@@ -1,0 +1,202 @@
+{
+ "model_version": "2026-11-20-source-vintage-disclosed",
+ "basis_note": "Published and cited values plus clearly distinguished engineering and financial assumptions, not a verified on-grid asset inventory.",
+ "lcoe": {
+  "Nigeria": {
+   "capacity_kW": 1000,
+   "capex_per_kW": 1600,
+   "wacc": 0.18,
+   "project_life_yr": 25,
+   "capacity_factor": 0.19,
+   "om_per_kW_yr": 18
+  },
+  "Africa average": {
+   "capacity_kW": 1000,
+   "capex_per_kW": 1093,
+   "wacc": 0.12,
+   "project_life_yr": 25,
+   "capacity_factor": 0.19,
+   "om_per_kW_yr": 16
+  },
+  "Europe PV": {
+   "capacity_kW": 1000,
+   "capex_per_kW": 779,
+   "wacc": 0.042,
+   "project_life_yr": 25,
+   "capacity_factor": 0.13,
+   "om_per_kW_yr": 12
+  }
+ },
+ "diesel_unit": {
+  "diesel_lcoe": 0.3533333333333334,
+  "petrol_lcoe": 0.34225714285714287,
+  "fleet_midpoint_gw": 11,
+  "fleet_low_gw": 8,
+  "fleet_high_gw": 14,
+  "historical_different_scope_gw": 23,
+  "hours_per_day": 6,
+  "days_per_year": 350,
+  "load_factor": 0.37,
+  "fuel_cost_usd_per_kwh": 0.30333333333333334,
+  "unit_capex_usd_kw": 400,
+  "unit_life_years": 10,
+  "unit_operating_hours_per_year": 2000,
+  "maintenance_usd_per_kwh": 0.03
+ },
+ "access": {
+  "people_without_access_m": 86.8,
+  "household_size": 5,
+  "tier3_kwh_hh_y": 365,
+  "pv_cf": 0.19,
+  "mini_grid_capex_usd_kw_assumed": 4320,
+  "dares_public_credit_usd_m": 750
+ },
+ "afsia_country_table_mwp": {
+  "identified_utility_scale": 12.8,
+  "commercial_industrial": 3970.16,
+  "mini_grid": 94.0,
+  "solar_home_systems": 88.57,
+  "residential": 648.91
+ },
+ "pigi_full_target": [
+  0.9296666666666666,
+  0.9478333333333333,
+  0.45913157894736845,
+  0.0,
+  0.99744,
+  0.5458333333333334
+ ],
+ "pigi_labels": [
+  "Solar share 2020",
+  "Solar share 2030",
+  "RE share 2020",
+  "RE share 2030",
+  "Grid-connected solar 2030",
+  "Grid capacity 2030"
+ ],
+ "policy_scores": {
+  "Nigeria": [
+   3,
+   3,
+   2,
+   3,
+   3,
+   3,
+   1,
+   4
+  ],
+  "Kenya": [
+   7,
+   6,
+   7,
+   6,
+   6,
+   6,
+   8,
+   5
+  ],
+  "Morocco": [
+   9,
+   9,
+   10,
+   9,
+   8,
+   8,
+   6,
+   8
+  ],
+  "South Africa": [
+   7,
+   9,
+   6,
+   7,
+   6,
+   7,
+   6,
+   7
+  ]
+ },
+ "agency_counts": {
+  "Nigeria": 8,
+  "Kenya": 4,
+  "Morocco": 1,
+  "South Africa": 3
+ },
+ "reported_pv_capacity_mwp_nonharmonized": {
+  "Nigeria": 280,
+  "Kenya": 550,
+  "Morocco": 1090,
+  "South Africa": 11300
+ },
+ "population_m": {
+  "Nigeria": 232.7,
+  "Kenya": 52,
+  "Morocco": 37.5,
+  "South Africa": 60.5
+ },
+ "scenario": {
+  "statistical_pv_2024_mwp": 230,
+  "statistical_pv_2025_mwp": 280,
+  "cagrs": {
+   "BAU": 0.2,
+   "Partial Reform": 0.35,
+   "Full Reform": 0.5
+  },
+  "capacity_factor": 0.19,
+  "average_grid_emissions_t_per_mwh": 0.4035,
+  "unit_capex_usd_kw_assumed": 1100,
+  "target_on_grid_mwp_noncomparable": 5000
+ },
+ "grid_loss_inputs": {
+  "energy_received_twh_per_y_assumed": 28,
+  "technical_commercial_share": 0.1882,
+  "collection_shortfall_share": 0.2561,
+  "benchmark_atcc_share": 0.2054,
+  "retail_tariff_ngn_per_kwh": 116.25,
+  "fx_ngn_usd": 1500
+ },
+ "ahp_author_judgments": [
+  [
+   1,
+   2,
+   3,
+   4
+  ],
+  [
+   0.5,
+   1,
+   2,
+   3
+  ],
+  [
+   0.3333333333333333,
+   0.5,
+   1,
+   2
+  ],
+  [
+   0.25,
+   0.3333333333333333,
+   0.5,
+   1
+  ]
+ ],
+ "afsia_vintage_provenance": {
+  "may_final_pdf": "https://www.afsiasolar.com/wp-content/uploads/2026/05/Africa-Solar-Outlook-2026-final-260520.pdf",
+  "may_status": "PRIMARY: publisher-hosted final build (260520), 167 pp., PDF metadata author John van Zuylen (AFSIA), created 2026-05-20; Nigeria table p.131 inspected directly; copy held by the authors",
+  "january_pdf": "https://www.afsiasolar.com/wp-content/uploads/2026/01/Africa-Solar-Outlook-2026-final-260114-2.pdf",
+  "january_status": "Superseded earlier build (260114-2); Nigeria profile p.119 inspected; retained as source-vintage sensitivity",
+  "no_stock_credit_primary": true
+ },
+ "afsia_january_build_superseded_mwp": {
+  "identified_utility_scale": 12.8,
+  "commercial_industrial": 293.03,
+  "mini_grid": 94.0,
+  "solar_home_systems": 88.57,
+  "residential": 703.01
+ },
+ "pigi_grid_solar_numerator_mwp": 12.8,
+ "pigi_grid_solar_numerator_source": "AFSIA Africa Solar Outlook 2026, May 2026 final build (260520), Nigeria table p.131: utility-scale 12.80 MWp (grid-connected, national-utility off-taker)",
+ "pigi_grid_solar_onGrid_upper_bound_mw": 176.369,
+ "pigi_grid_solar_onGrid_upper_bound_source": "IRENA Renewable Capacity Statistics 2026: total PV 285 MW (p.25) minus off-grid PV 108.631 MW (p.46)"
+}

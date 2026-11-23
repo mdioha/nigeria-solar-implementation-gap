@@ -1,0 +1,242 @@
+{
+  "model_version": "2026-11-20-source-vintage-disclosed",
+  "critical_qualification": "Published and cited values plus clearly distinguished engineering and financial assumptions, not a verified on-grid asset inventory.",
+  "lcoe": {
+    "Nigeria": {
+      "capacity_kW": 1000,
+      "capex_per_kW": 1600,
+      "wacc": 0.18,
+      "project_life_yr": 25,
+      "capacity_factor": 0.19,
+      "om_per_kW_yr": 18,
+      "LCOE_USD_per_kWh": 0.18665592512661583
+    },
+    "Africa average": {
+      "capacity_kW": 1000,
+      "capex_per_kW": 1093,
+      "wacc": 0.12,
+      "project_life_yr": 25,
+      "capacity_factor": 0.19,
+      "om_per_kW_yr": 16,
+      "LCOE_USD_per_kWh": 0.09334142453844745
+    },
+    "Europe PV": {
+      "capacity_kW": 1000,
+      "capex_per_kW": 779,
+      "wacc": 0.042,
+      "project_life_yr": 25,
+      "capacity_factor": 0.13,
+      "om_per_kW_yr": 12,
+      "LCOE_USD_per_kWh": 0.055255513309024534
+    }
+  },
+  "counterfactual_nigeria_lcoe": 0.13338136967989206,
+  "pigi": {
+    "preferred_six_indicator_mean": 0.6466508187134503,
+    "five_indicator_excluding_grid_solar_row_mean": 0.5764929824561403,
+    "six_indicator_median": 0.73775,
+    "grid_solar_row_index": 4,
+    "grid_solar_numerator": "AFSIA Africa Solar Outlook 2026, May 2026 final build (260520), Nigeria table p.131: utility-scale 12.80 MWp (grid-connected, national-utility off-taker)",
+    "grid_solar_row_pigi_onGrid_upper_bound": 0.9647262
+  },
+  "policy_scoring": {
+    "score_totals": {
+      "Nigeria": 22,
+      "Kenya": 51,
+      "Morocco": 67,
+      "South Africa": 55
+    },
+    "score_stress_ranges": {
+      "Nigeria": [
+        14,
+        30
+      ],
+      "Kenya": [
+        43,
+        59
+      ],
+      "Morocco": [
+        59,
+        74
+      ],
+      "South Africa": [
+        47,
+        63
+      ]
+    },
+    "only_bottom_rank_robust_to_independent_perturbation": true
+  },
+  "scenarios": {
+    "years": [
+      2024,
+      2025,
+      2026,
+      2027,
+      2028,
+      2029,
+      2030
+    ],
+    "capacity_paths_mwp": {
+      "BAU": [
+        230,
+        280,
+        336.0,
+        403.2,
+        483.84,
+        580.608,
+        696.7295999999999
+      ],
+      "Partial Reform": [
+        230,
+        280,
+        378.0,
+        510.3,
+        688.9050000000001,
+        930.0217500000002,
+        1255.5293625000004
+      ],
+      "Full Reform": [
+        230,
+        280,
+        420.0,
+        630.0,
+        945.0,
+        1417.5,
+        2126.25
+      ]
+    },
+    "gross_average_factor_displacement_mtco2_2026_2030": {
+      "BAU": 1.53928233309312,
+      "Partial Reform": 2.199436430352604,
+      "Full Reform": 3.0997863618750006
+    },
+    "investment_usd_bn": {
+      "BAU": 0.4584025599999999,
+      "Partial Reform": 1.0730822987500006,
+      "Full Reform": 2.030875
+    },
+    "boundary": "Ember national statistical PV, not verified on-grid; neither forecast nor marginal avoided emissions"
+  },
+  "sensitivity": {
+    "capex_per_kW": {
+      "lcoe_at_minus20": 0.15148768170186946,
+      "lcoe_at_plus20": 0.22182416855136225,
+      "swing": 0.07033648684949279
+    },
+    "wacc": {
+      "lcoe_at_minus20": 0.1542074835240354,
+      "lcoe_at_plus20": 0.22003202074436232,
+      "swing": 0.06582453722032691
+    },
+    "capacity_factor": {
+      "lcoe_at_minus20": 0.23331990640826977,
+      "lcoe_at_plus20": 0.1555466042721799,
+      "swing": 0.07777330213608988
+    },
+    "project_life_yr": {
+      "lcoe_at_minus20": 0.1904061343015015,
+      "lcoe_at_plus20": 0.1850654223811009,
+      "swing": 0.005340711920400587
+    },
+    "om_per_kW_yr": {
+      "lcoe_at_minus20": 0.18449298352603904,
+      "lcoe_at_plus20": 0.18881886672719264,
+      "swing": 0.004325883201153596
+    }
+  },
+  "fragmentation": {
+    "agencies": {
+      "Nigeria": 8,
+      "Kenya": 4,
+      "Morocco": 1,
+      "South Africa": 3
+    },
+    "reported_pv_per_person_w": {
+      "Nigeria": 1.2032660077352815,
+      "Kenya": 10.576923076923077,
+      "Morocco": 29.066666666666666,
+      "South Africa": 186.77685950413223
+    },
+    "sample_n": 4,
+    "inference": "Descriptive; heterogeneous PV capacity boundaries, no causal inference"
+  },
+  "access_gap": {
+    "gross_tier3_energy_equivalent_mwp": 3807.017543859649,
+    "preferred_no_stock_credit_investment_usd_bn": 16.446315789473683,
+    "afsia_country_access_relevant_stock_mwp": 831.48,
+    "optimistic_full_stock_credit_gap_mwp": 2975.537543859649,
+    "optimistic_full_stock_credit_investment_usd_bn": 12.854322189473683,
+    "dares_public_finance_share_gross_pct": 4.560291858678956,
+    "dares_public_finance_share_full_credit_pct": 5.834613361521076,
+    "all_afsia_country_table_categories_mwp": 4814.44
+  },
+  "afsia_version_sensitivity": {
+    "may_final_primary": {
+      "status": "May 2026 final build (publisher PDF held and inspected; primary)",
+      "five_category_total_mwp": 4814.44,
+      "access_relevant_stock_mwp": 831.48,
+      "optimistic_residual_mwp": 2975.537543859649,
+      "optimistic_full_credit_investment_usd_bn": 12.854322189473683
+    },
+    "january_build_superseded": {
+      "status": "January 2026 build (superseded; source-vintage sensitivity)",
+      "five_category_total_mwp": 1191.41,
+      "access_relevant_stock_mwp": 885.58,
+      "optimistic_residual_mwp": 2921.437543859649,
+      "optimistic_full_credit_investment_usd_bn": 12.620610189473682,
+      "dares_public_finance_share_pct": 5.942660368557641
+    },
+    "preferred_gross_no_stock_credit_investment_usd_bn": 16.446315789473683,
+    "provenance": {
+      "may_final_pdf": "https://www.afsiasolar.com/wp-content/uploads/2026/05/Africa-Solar-Outlook-2026-final-260520.pdf",
+      "may_status": "PRIMARY: publisher-hosted final build (260520), 167 pp., PDF metadata author John van Zuylen (AFSIA), created 2026-05-20; Nigeria table p.131 inspected directly; copy held by the authors",
+      "january_pdf": "https://www.afsiasolar.com/wp-content/uploads/2026/01/Africa-Solar-Outlook-2026-final-260114-2.pdf",
+      "january_status": "Superseded earlier build (260114-2); Nigeria profile p.119 inspected; retained as source-vintage sensitivity",
+      "no_stock_credit_primary": true
+    }
+  },
+  "diesel_parity": {
+    "diesel_lcoe": 0.3533333333333334,
+    "petrol_lcoe": 0.34225714285714287,
+    "illustrative_generator_fleet_midpoint_gw": 11,
+    "generator_fleet_source_range_gw": [
+      8,
+      14
+    ],
+    "assumed_effective_full_load_hours_per_year": 777.0,
+    "hypothetical_output_twh": 8.547,
+    "gross_production_cost_usd_bn": 3.0199400000000005,
+    "theoretical_cost_difference_usd_bn_NOT_net_savings": 1.424591807942815,
+    "displacement_fraction_scenarios": {
+      "0.1": 0.14245918079428152,
+      "0.25": 0.35614795198570376,
+      "0.5": 0.7122959039714075
+    },
+    "no_net_savings_claim": true,
+    "unit_cost_capital_recovery_hours_per_year": 2000,
+    "fleet_consistent_unit_cost_usd_per_kwh": 0.3848133848133848,
+    "fleet_consistent_gross_contrast_usd_bn_NOT_net_savings": 1.6936518079428144
+  },
+  "grid_loss": {
+    "atcc_aggregate": 0.3961019800000001,
+    "tc_energy_lost_or_unbilled_twh": 5.2696000000000005,
+    "collection_unpaid_energy_equiv_twh": 5.82125544,
+    "illustrative_revenue_shortfall_ngn_bn": 1289.3119449000003,
+    "illustrative_revenue_shortfall_usd_bn": 0.8595412966000002,
+    "excess_above_benchmark_usd_bn": 0.4138232966000002,
+    "retail_tariff_price_valuation_not_welfare_usd_bn": 0.408394,
+    "generator_cost_price_valuation_not_welfare_usd_bn": 1.8619253333333339,
+    "does_not_measure_physical_unserved_energy_or_welfare": true
+  },
+  "ahp": {
+    "weights_finance_regulatory_institutional_technical": [
+      0.46684856372022104,
+      0.27758981680244404,
+      0.16026655545518997,
+      0.09529506402214503
+    ],
+    "lambda_max": 4.030983498297896,
+    "consistency_ratio": 0.011475369739961577,
+    "only_consistency_not_population_representativeness": true
+  }
+}

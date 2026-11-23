@@ -29,7 +29,7 @@ python validate_package.py           # 30 checks against the workbooks
 | `lcoe_monte_carlo.py` | Seeded Monte Carlo (10,000 draws, triangular +/-20% on CAPEX, WACC, capacity factor) for the LCOE uncertainty bands |
 | `ahp_sensitivity_reproduce.py` | Enumerates all 729 one-step perturbations of the AHP judgment matrix; writes `AHP_sensitivity_cases.csv` |
 | `validate_package.py` | Read-only consistency check: 30 assertions tying the workbooks in `data/` to `results_summary.json`, plus a cached-error scan |
-| `data/` | The two analysis workbooks exactly as published with the article (14-sheet supplementary file; standalone PIGI extract) |
+| `data/` | The analysis workbooks published with the article: the 14-sheet supplementary file, the standalone PIGI extract, and the AHP Judgment Audit (`AHP_Judgment_Audit.xlsx`: the provenance and rationale for each of the six pairwise judgments, and all 729 perturbed matrices with their weights, consistency ratios and rankings) |
 | `expected_outputs/` | Reference copies of `results_summary.json`, `AHP_sensitivity_cases.csv` and the 7 published figures, for diffing against your regenerated outputs |
 
 ## What to expect when reproducing
